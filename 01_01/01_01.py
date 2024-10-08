@@ -1,6 +1,8 @@
 while True:
   try:
     wert = int(input("Bitte geben Sie eine Zahl zwischen 0 und 9 ein: "))
+    if wert == "":
+      print("Es muss etwas eingegeben werden!!")
     if wert > 0 and wert <= 9:
       print ("passt!!")
       break
